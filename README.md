@@ -146,9 +146,9 @@ El boilerplate que les damos contiene esta estructura:
   diseño que tomaron.
   
   * Quiénes son los principales usuarios de producto.
-  personas que puedan comletar su compra haciendo uso de una tarjeta
+  personas que puedan completar su compra haciendo uso de una tarjeta de credito
   * Cuáles son los objetivos de estos usuarios en relación con tu producto.
-  completar su compra satisfactoriamente.
+  completar su compra satisfactoriamente pero antes validar si su tarjeta se encuentra activada.
   * Cómo crees que el producto que estás creando está resolviendo sus problemas.
   es el final de un proceso de compra digital que busca validar su tarjeta.
   
