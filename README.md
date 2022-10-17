@@ -144,6 +144,14 @@ El boilerplate que les damos contiene esta estructura:
 * `README.md`: debe explicar la información necesaria para el uso de tu aplicación web,
   así como una introducción a la aplicación, su funcionalidad y decisiones de
   diseño que tomaron.
+  
+  * Quiénes son los principales usuarios de producto.
+  personas que puedan comletar su compra haciendo uso de una tarjeta
+  * Cuáles son los objetivos de estos usuarios en relación con tu producto.
+  completar su compra satisfactoriamente.
+  * Cómo crees que el producto que estás creando está resolviendo sus problemas.
+  es el final de un proceso de compra digital que busca validar su tarjeta.
+  
 * `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
   debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
 * `src/style.css`: este archivo debe contener las reglas de estilo. Queremos que escribas tus
