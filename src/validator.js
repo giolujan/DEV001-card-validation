@@ -38,22 +38,6 @@ const validator = {
       }
     }
       return resultado
-
-      //let juntar = number[i]
-      //juntar = michi.concat(resultado2)
-      //if (numero.length <= 4) {
-        //return numero
-      //  let enmascarar = numero.slice(0,-4);
-      //  let michi = enmascarar.replaceall(numero.slice(0,-4),"#");
-      //  resultado = michi.join();
-
-      //else {
-       // let sinenmascarar = numero.slice(-4);
-       // resultado2 = sinenmascarar.join();
-     // }
-      // let juntar = resultado.concat(resultado2)
-      // alert("ocultar" + juntar)
-      //console.log(enmascarar,michi)
      }
     }
 
