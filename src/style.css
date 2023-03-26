@@ -3,7 +3,7 @@ margin: 0 ;
 box-sizing: border-box;
 }
 body {
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .contenedor { 
@@ -23,7 +23,7 @@ body {
     transition: .3s ease all;
     transform: rotateY(0deg);
     transform-style: preserve-3d;
-    backface-visibility: hidden;
+    backface-visibility: visible;
     cursor: pointer;
     z-index: 2;
 }
@@ -128,6 +128,7 @@ body {
 
 .trasera .datos #ccv {
     width: 20%;
+    text-transform: uppercase;
 }
 
 .trasera .datos #ccv .ccv {
