@@ -1,12 +1,15 @@
-* { padding: 0;
-margin: 0 ;
-box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 body {
     background-color: whitesmoke;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.contenedor { 
+
+.contenedor {
     width: 90%;
     max-width: 1000px;
     padding: 40px 20px;
@@ -15,6 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .tarjeta {
     width: 100%;
     max-width: 550px;
@@ -32,7 +36,7 @@ body {
     transform: rotateY(180deg);
 }
 
-.tarjeta > div {
+.tarjeta>div {
     padding: 30px;
     border-radius: 15px;
     min-height: 315px;
@@ -41,32 +45,38 @@ body {
     justify-content: space-between;
     box-shadow: 0 10px 10px 0 rgba(211, 216, 222, 0.3);
 }
+
 .tarjeta .delantera {
     width: 100%;
     background: url(./img/fondopastel.jpg);
     background-size: cover;
 }
+
 .delantera .logo-marca {
     text-align: end;
     min-height: 50px;
 }
+
 .delantera .logo-marca img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     max-width: 80px;
 }
+
 .delantera .chip {
     width: 100%;
     max-width: 50px;
     margin-bottom: 20px;
 }
+
 .delantera .grupo .label {
     font-size: 16px;
     font-weight: bold;
-    color:darkgray;
+    color: darkgray;
     margin-bottom: 5px;
 }
+
 .delantera .grupo .numero1,
 .delantera .grupo .nombre1,
 .delantera .grupo .expiracion {
@@ -74,6 +84,7 @@ body {
     color: gray;
     text-transform: uppercase;
 }
+
 .delantera .flexbox {
     display: flex;
     justify-content: space-between;
@@ -175,7 +186,7 @@ body {
     transform: rotate(45deg);
 }
 
-.formulario-tarjeta{
+.formulario-tarjeta {
     background: #fff;
     width: 100%;
     max-width: 700px;

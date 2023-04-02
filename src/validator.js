@@ -8,37 +8,42 @@ const validator = {
     let sumaTotal = 0;
     for (let i = 0; i < fragmentar.length; i++) {
       let NumeroElegido = fragmentar[i]
-      if (i % 2 != 0){
-        NumeroElegido = fragmentar[i]*2 ;
+      if (i % 2 != 0) {
+        NumeroElegido = fragmentar[i] * 2;
         if (NumeroElegido > 9) {
-          let sumaDigitos = NumeroElegido - 9 ;
-        suma1 += sumaDigitos}
+          let sumaDigitos = NumeroElegido - 9;
+          suma1 += sumaDigitos
+        }
         else {
-        suma1 += NumeroElegido}}
-      else{
+          suma1 += NumeroElegido
+        }
+      }
+      else {
         suma2 += Number(NumeroElegido)
       }
-    sumaTotal = suma1 + suma2}
-    if (sumaTotal % 10 == 0){
+      sumaTotal = suma1 + suma2
+    }
+    if (sumaTotal % 10 == 0) {
       return true
     }
     else {
-      return false}
+      return false
+    }
   },
-  maskify:(number) => {
+  maskify: (number) => {
     let resultado = "";
     //cadena
-    for (let i = 0; i < number.length; i++){
-      if (i < number.length-4){
-        resultado = resultado+ "#"
+    for (let i = 0; i < number.length; i++) {
+      if (i < number.length - 4) {
+        resultado = resultado + "#"
         //por numero sale un michi
-      } 
+      }
       else {
-        resultado = resultado+ number[i]
+        resultado = resultado + number[i]
       }
     }
-      return resultado
-     }
-    }
+    return resultado
+  }
+}
 
 export default validator;

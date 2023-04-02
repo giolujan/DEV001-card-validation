@@ -5,22 +5,22 @@ const btnFormulario = document.querySelector('#btnFormulario');
 const formulario = document.querySelector('#formulario-de-tarjeta')
 
 // mosntrarfrente si tiene la clase desactivada
-const  mostrarFrente = () => {
-    if(tarjeta.classList.contains('active')){
+const mostrarFrente = () => {
+    if (tarjeta.classList.contains('active')) {
         tarjeta.classList.remove('active');
     }
 };
 
 // mosntrartrasera si tiene la clase desactivada
-const  mostrartrasera = () => {
-    if(!tarjeta.classList.contains('active')){
+const mostrartrasera = () => {
+    if (!tarjeta.classList.contains('active')) {
         tarjeta.classList.add('active');
     }
 };
 
 
 // abrir el formulario
-btnFormulario.addEventListener('click',() => {
+btnFormulario.addEventListener('click', () => {
     btnFormulario.classList.toggle('active');
     formulario.classList.toggle('active');
 });
@@ -31,7 +31,7 @@ tarjeta.addEventListener('click', () => {
 });
 
 // select del mes  generado dinamicamente
-for(let i= 1; i <= 12; i++){
+for (let i = 1; i <= 12; i++) {
     let option = document.createElement("option");
     option.value = i;
     // innertext el texto dentro de la variable
@@ -44,7 +44,7 @@ for(let i= 1; i <= 12; i++){
 // metodo que obtiene el año actual
 const actualYear = new Date().getFullYear();
 
-for(let i= actualYear; i <= actualYear + 8; i++){
+for (let i = actualYear; i <= actualYear + 8; i++) {
     let optionYear = document.createElement("option");
     optionYear.value = i;
     optionYear.innerText = i;
@@ -61,9 +61,9 @@ inputTitular.addEventListener("keyup", (e) => {
     tarjetaName.textContent = valueInput;
     firmatarjeta.textContent = valueInput;
 
-    if(valueInput == ''){
-		tarjetaName.textContent = 'Jhon Doe';
-	}
+    if (valueInput == '') {
+        tarjetaName.textContent = 'Jhon Doe';
+    }
     mostrarFrente();
 })
 
@@ -71,18 +71,18 @@ const tarjetaNumber = document.querySelector('#tarjeta .numero1')
 const inputNumber = document.getElementById('numero');
 
 inputNumber.addEventListener("keyup", (e) => {
-  let valueInput = e.target.value;
-     formulario.numero.value = valueInput
-    // Eliminamos espacios en blanco
-	.replace(/\s/g, '')
-	// Eliminar las letras
-	.replace(/\D/g, '')
-	// Ponemos espacio cada cutro numeros
-	//.replace(/([0-9]{4})/g, '$1 ')
-	// Elimina el ultimo espaciado
-	.trim();
+    let valueInput = e.target.value;
+    formulario.numero.value = valueInput
+        // Eliminamos espacios en blanco
+        .replace(/\s/g, '')
+        // Eliminar las letras
+        .replace(/\D/g, '')
+        // Ponemos espacio cada cutro numeros
+        //.replace(/([0-9]{4})/g, '$1 ')
+        // Elimina el ultimo espaciado
+        .trim();
     tarjetaNumber.textContent = valueInput;
-    if(valueInput == '') {
+    if (valueInput == '') {
         tarjetaNumber.textContent = "#### #### #### ####";
     }
 
@@ -95,12 +95,12 @@ const yeartarjeta = document.querySelector('#tarjeta .year');
 const week = document.getElementById('selectMes');
 const weektarjeta = document.querySelector('#tarjeta .mes');
 
-year.addEventListener( 'change', (e) => {
+year.addEventListener('change', (e) => {
     yeartarjeta.textContent = e.target.value;
     mostrarFrente();
 })
 
-week.addEventListener( 'change', (e) => {
+week.addEventListener('change', (e) => {
     weektarjeta.textContent = e.target.value;
     mostrarFrente();
 })
@@ -109,13 +109,13 @@ week.addEventListener( 'change', (e) => {
 const inputCvv = document.querySelector('.cvv-input');
 const tarjetaccv = document.querySelector('#tarjeta .ccv')
 
-inputCvv.addEventListener( "keyup", (e) => {
+inputCvv.addEventListener("keyup", (e) => {
     let valueInput = e.target.value;
     inputCvv.value = valueInput
-    // Eliminamos espacios en blanco
-	.replace(/\s/g, '')
-	// Eliminar las letras
-	.replace(/\D/g, '')
+        // Eliminamos espacios en blanco
+        .replace(/\s/g, '')
+        // Eliminar las letras
+        .replace(/\D/g, '')
     tarjetaccv.textContent = valueInput;
     mostrartrasera();
 })
